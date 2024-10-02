@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="基于Hexo与GitHub搭建个人博客, 存在于梦境的真实之地">
-    <meta name="description" content="基于Hexo与GitHub搭建个人博客">
+    <meta name="keywords" content="git常用命令, 存在于梦境的真实之地">
+    <meta name="description" content="git init">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>基于Hexo与GitHub搭建个人博客 | 存在于梦境的真实之地</title>
+    <title>git常用命令 | 存在于梦境的真实之地</title>
     <link rel="icon" type="image/x-icon, image/vnd.microsoft.icon" href="/blog/favicon.ico">
     
 
@@ -38,7 +38,9 @@
 
 
 
+    <link rel="stylesheet" href="/blog/libs/tocbot/tocbot.css">
     <link rel="stylesheet" href="/blog/css/post.css">
+
 
 
 
@@ -51,7 +53,8 @@
     <script src="/blog/libs/jquery/jquery-3.6.0.min.js"></script>
 
 <meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/blog/atom.xml" title="存在于梦境的真实之地" type="application/atom+xml">
-</head>
+<link rel="stylesheet" href="/blog/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/blog/css/prism-line-numbers.css" type="text/css"></head>
 
 
 <body>
@@ -73,11 +76,22 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/blog/" class="waves-effect waves-light">
+    <a href="https://nudoo.github.io/" class="waves-effect waves-light">
       
       <i class="fas fa-home" style="zoom: 0.6;"></i>
       
       <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/blog/" class="waves-effect waves-light">
+      
+      <i class="fas fa-square-rss" style="zoom: 0.6;"></i>
+      
+      <span>Blog</span>
     </a>
     
   </li>
@@ -168,11 +182,22 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/blog/" class="waves-effect waves-light">
+		<a href="https://nudoo.github.io/" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-home"></i>
 			
 			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/blog/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-square-rss"></i>
+			
+			Blog
 		</a>
           
         </li>
@@ -311,12 +336,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://tc.alcy.cc/i/2024/04/21/662416a604fb3.webp')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://i.loli.net/2018/07/30/5b5f2f319a4c8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">基于Hexo与GitHub搭建个人博客</h1>
+                    <h1 class="description center-align post-title">git常用命令</h1>
                 </div>
             </div>
         </div>
@@ -326,10 +351,12 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -338,12 +365,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/blog/tags/github/">
-                                <span class="chip bg-color">github</span>
-                            </a>
-                        
-                            <a href="/blog/tags/%E6%95%99%E7%A8%8B/">
-                                <span class="chip bg-color">教程</span>
+                            <a href="/blog/tags/git/">
+                                <span class="chip bg-color">git</span>
                             </a>
                         
                     </div>
@@ -354,8 +377,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/blog/categories/Markdown/" class="post-category">
-                                Markdown
+                            <a href="/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="post-category">
+                                开发工具
                             </a>
                         
                     </div>
@@ -376,7 +399,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    1.1k
                 </div>
                 
 
@@ -393,178 +416,95 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="0-前期准备"><a href="#0-前期准备" class="headerlink" title="0.前期准备"></a>0.前期准备</h2><p>开始之前，请确保已安装以下工具：git、npm<br>在github创建一个仓库：username.github.io<br>在本地建一个同名的目录</p>
-<h2 id="1-安装hexo"><a href="#1-安装hexo" class="headerlink" title="1.安装hexo"></a>1.安装hexo</h2><pre><code class="bash">npm install -g hexo-cli
-</code></pre>
-<p>###1.1 初始化<br>执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件：</p>
-<pre><code class="sh">$ hexo init &lt;folder&gt;
-$ cd &lt;folder&gt;
-$ npm install
-</code></pre>
-<p>###1.2 更改配置<br>修改_config.yml:(注意配置的键值之间要有空格)</p>
-<h4 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h4><table>
-<thead>
-<tr>
-<th align="left">设置</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">title</td>
-<td align="left">网站标题</td>
-</tr>
-<tr>
-<td align="left">subtitle</td>
-<td align="left">网站副标题</td>
-</tr>
-<tr>
-<td align="left">description</td>
-<td align="left">网站描述</td>
-</tr>
-<tr>
-<td align="left">keywords</td>
-<td align="left">网站的关键词。 支持多个关键词。</td>
-</tr>
-<tr>
-<td align="left">author</td>
-<td align="left">您的名字</td>
-</tr>
-<tr>
-<td align="left">language</td>
-<td align="left">网站使用的语言。 使用 2 个字母的 ISO-639-1 代码，或 它的变体。 默认为 en。</td>
-</tr>
-<tr>
-<td align="left">timezone</td>
-<td align="left">网站时区。 Hexo 默认使用您电脑的时区。 请参考 时区列表 进行设置，如 America&#x2F;New_York, Japan, 和 UTC 。 一般的，对于中国大陆地区可以使用</td>
-</tr>
-</tbody></table>
-<h4 id="网址"><a href="#网址" class="headerlink" title="网址"></a>网址</h4><table>
-<thead>
-<tr>
-<th align="center">设置</th>
-<th align="center">描述</th>
-<th align="center">默认值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">url</td>
-<td align="center">网址, 必须以 http:&#x2F;&#x2F; 或 https:&#x2F;&#x2F; 开头</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">root</td>
-<td align="center">网站根目录	url’s pathname</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">permalink</td>
-<td align="center">文章的 永久链接 格式	:year&#x2F;:month&#x2F;:day&#x2F;:title&#x2F;</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">permalink_defaults</td>
-<td align="center">永久链接中各部分的默认值</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">pretty_urls</td>
-<td align="center">改写 permalink 的值来美化 URL</td>
-<td align="center"></td>
-</tr>
-<tr>
-<td align="center">pretty_urls.trailing_index</td>
-<td align="center">是否在永久链接中保留尾部的 index.html，设置为 false 时去除</td>
-<td align="center">true</td>
-</tr>
-<tr>
-<td align="center">pretty_urls.trailing_html</td>
-<td align="center">是否在永久链接中保留尾部的 .html, 设置为 false 时去除 (对尾部的 index.html无效)</td>
-<td align="center">true</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p><strong>网站存放在子目录</strong><br>如果您的网站存放在子目录中，例如 [<a target="_blank" rel="noopener" href="http://example.com/blog]">http://example.com/blog]</a> ,则请将您的 url 设为 [<a target="_blank" rel="noopener" href="http://example.com/blog]">http://example.com/blog]</a> ,并把 root 设为 &#x2F;blog&#x2F;。</p>
-</blockquote>
-<p>###1.3 安装主题<br>这里选择的是keep主题。使用git clone：</p>
-<pre><code class="sh">$ cd &lt;folder&gt;
-$ git clone https://github.com/XPoet/hexo-theme-keep themes/keep
-</code></pre>
-<p>或使用npm安装：</p>
-<pre><code class="javascript">$ cd &lt;folder&gt;
-$ npm install hexo-theme-keep
-</code></pre>
-<p>Keep 主题安装完成后，在 Hexo 配置文件 _config.yml 中将 theme 设置为 keep。<br>更新主题：<br>通过 Git 更新到最新的 master 分支：</p>
-<pre><code class="sh">$ cd &lt;folder&gt;/themes/keep
-$ git pull
-</code></pre>
-<p>或通过 NPM 安装最新版本</p>
-<pre><code class="sh">$ cd &lt;folder&gt;
-$ npm install hexo-theme-keep@latest
-</code></pre>
-<ul>
-<li>两种方式不要混用</li>
-</ul>
-<p>###1.4 写文章<br>在<folder>&#x2F;source&#x2F;_posts下创建你的第一个博客吧</p>
-<pre><code class="sh">$ hexo new post &quot;title&quot;
-</code></pre>
-<p>###1.5 测试</p>
-<pre><code class="sh">hexo server  //hexo s
-</code></pre>
-<p>测试服务启动后，可以在浏览器输入localhost:4000进行访问。<br>（本人的网站存放在子目录中，输入localhost:4000&#x2F;blog&#x2F;访问）</p>
-<h2 id="远程部署"><a href="#远程部署" class="headerlink" title="远程部署"></a>远程部署</h2><p>1.6 安装hexo-deployer-git自动部署发布工具 </p>
-<pre><code class="sh">$ npm install hexo-deployer-git --save
-</code></pre>
-<p>配置_config.yml:</p>
-<pre><code class="yaml">deploy:
-  type: git
-  repo: https://github.com/&lt;username&gt;/&lt;project&gt;
-  // example, https://github.com/hexojs/hexojs.github.io
-  branch: gh-pages
-</code></pre>
-<p>为了将博客放在子目录(即nudoo.github.io&#x2F;blog)下，需要新建一个github仓库(blog)，注意需要是公开的，<br>在 GitHub 仓库的设置中，导航至 Settings &gt; Pages &gt; Source 。 将 source 更改为 GitHub Actions，然后保存。<br>编辑 _config.yml，将 url: 更改为 nudoo.github.io&#x2F;blog<br>Commit 并 push 到默认分支上。（hexo clean &amp; hexo g &amp; hexo d)<br>访问nudoo.github.io&#x2F;blog查看</p>
-<p>1.7 发布<br>清除之前生成的东西</p>
-<pre><code class="javascript">hexo clean
-</code></pre>
-<p>生成静态文章</p>
-<pre><code class="javascript">hexo generate // hexo g
-</code></pre>
-<p> 部署文章</p>
-<pre><code class="javascript">hexo deploy // hexo d
-</code></pre>
-<p>也可以写在一起</p>
-<pre><code class="javascript">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
-</code></pre>
-<p>附：</p>
-<h2 id="备份源文件"><a href="#备份源文件" class="headerlink" title="备份源文件"></a>备份源文件</h2><p> hexo deploy只将生成的静态网页文件(public目录)上传到了仓库中，如果想要多个终端同步写作，可以把blog源文件上传到github。<br> 在github仓库新建一个分支hexo，然后git clone到本地，把.git文件夹拿出来，放在博客根目录下。<br> 然后git checkout hexo切换到hexo分支，然后git add .，然后git commit -m “xxx”，最后git push origin hexo提交就行了。</p>
-<ul>
-<li>也可以新建一个仓库存放源文件</li>
-</ul>
-<h2 id="宠物"><a href="#宠物" class="headerlink" title="宠物"></a>宠物</h2><p>1、安装live2d插件</p>
-<pre><code class="javascript">npm install --save hexo-helper-live2d
-</code></pre>
-<p>3、安装模型</p>
-<pre><code class="javascript">npm install live2d-widget-model-shizuku
-</code></pre>
-<p>4、在配置文件中添加即可</p>
-<pre><code class="yaml">live2d:
-  enable: true
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  log: false
-  model:
-    use: live2d-widget-model-shizuku
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: true
-  react:
-    opacity: 0.7
-</code></pre>
+                <p>一些git命令：</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> init                                                  <span class="token comment" spellcheck="true"># 初始化本地git仓库（创建新仓库）</span>
+<span class="token function">git</span> config --global user.name <span class="token string">"xxx"</span>                       <span class="token comment" spellcheck="true"># 配置用户名</span>
+<span class="token function">git</span> config --global user.email <span class="token string">"xxx@xxx.com"</span>              <span class="token comment" spellcheck="true"># 配置邮件</span>
+<span class="token function">git</span> config --global color.ui <span class="token boolean">true</span>                         <span class="token comment" spellcheck="true"># git status等命令自动着色</span>
+<span class="token function">git</span> config --global color.status auto
+<span class="token function">git</span> config --global color.diff auto
+<span class="token function">git</span> config --global color.branch auto
+<span class="token function">git</span> config --global color.interactive auto
+<span class="token function">git</span> config --global --unset http.proxy                    <span class="token comment" spellcheck="true"># remove  proxy configuration on git</span>
+<span class="token function">git</span> clone git+ssh://git@192.168.53.168/VT.git             <span class="token comment" spellcheck="true"># clone远程仓库</span>
+<span class="token function">git</span> status                                                <span class="token comment" spellcheck="true"># 查看当前版本状态（是否修改）</span>
+<span class="token function">git</span> add xyz                                               <span class="token comment" spellcheck="true"># 添加xyz文件至index</span>
+<span class="token function">git</span> add <span class="token keyword">.</span>                                                 <span class="token comment" spellcheck="true"># 增加当前子目录下所有更改过的文件至index</span>
+<span class="token function">git</span> commit -m <span class="token string">'xxx'</span>                                       <span class="token comment" spellcheck="true"># 提交</span>
+<span class="token function">git</span> commit --amend -m <span class="token string">'xxx'</span>                               <span class="token comment" spellcheck="true"># 合并上一次提交（用于反复修改）</span>
+<span class="token function">git</span> commit -am <span class="token string">'xxx'</span>                                      <span class="token comment" spellcheck="true"># 将add和commit合为一步</span>
+<span class="token function">git</span> <span class="token function">rm</span> xxx                                                <span class="token comment" spellcheck="true"># 删除index中的文件</span>
+<span class="token function">git</span> <span class="token function">rm</span> -r *                                               <span class="token comment" spellcheck="true"># 递归删除</span>
+<span class="token function">git</span> log                                                   <span class="token comment" spellcheck="true"># 显示提交日志</span>
+<span class="token function">git</span> log -1                                                <span class="token comment" spellcheck="true"># 显示1行日志 -n为n行</span>
+<span class="token function">git</span> log -5
+<span class="token function">git</span> log --stat                                            <span class="token comment" spellcheck="true"># 显示提交日志及相关变动文件</span>
+<span class="token function">git</span> log -p -m
+<span class="token function">git</span> show dfb02e6e4f2f7b573337763e5c0013802e392818         <span class="token comment" spellcheck="true"># 显示某个提交的详细内容</span>
+<span class="token function">git</span> show dfb02                                            <span class="token comment" spellcheck="true"># 可只用commitid的前几位</span>
+<span class="token function">git</span> show HEAD                                             <span class="token comment" spellcheck="true"># 显示HEAD提交日志</span>
+<span class="token function">git</span> show HEAD^                                            <span class="token comment" spellcheck="true"># 显示HEAD的父（上一个版本）的提交日志 ^^为上两个版本 ^5为上5个版本</span>
+<span class="token function">git</span> tag                                                   <span class="token comment" spellcheck="true"># 显示已存在的tag</span>
+<span class="token function">git</span> tag -a v2.0 -m <span class="token string">'xxx'</span>                                  <span class="token comment" spellcheck="true"># 增加v2.0的tag</span>
+<span class="token function">git</span> show v2.0                                             <span class="token comment" spellcheck="true"># 显示v2.0的日志及详细内容</span>
+<span class="token function">git</span> log v2.0                                              <span class="token comment" spellcheck="true"># 显示v2.0的日志</span>
+<span class="token function">git</span> <span class="token function">diff</span>                                                  <span class="token comment" spellcheck="true"># 显示所有未添加至index的变更</span>
+<span class="token function">git</span> <span class="token function">diff</span> --cached                                         <span class="token comment" spellcheck="true"># 显示所有已添加index但还未commit的变更</span>
+<span class="token function">git</span> <span class="token function">diff</span> HEAD^                                            <span class="token comment" spellcheck="true"># 比较与上一个版本的差异</span>
+<span class="token function">git</span> <span class="token function">diff</span> HEAD -- ./lib                                    <span class="token comment" spellcheck="true"># 比较与HEAD版本lib目录的差异</span>
+<span class="token function">git</span> <span class="token function">diff</span> origin/master<span class="token punctuation">..</span>master                            <span class="token comment" spellcheck="true"># 比较远程分支master上有本地分支master上没有的</span>
+<span class="token function">git</span> <span class="token function">diff</span> origin/master<span class="token punctuation">..</span>master --stat                     <span class="token comment" spellcheck="true"># 只显示差异的文件，不显示具体内容</span>
+<span class="token function">git</span> remote add origin git+ssh://git@192.168.53.168/VT.git <span class="token comment" spellcheck="true"># 增加远程定义（用于push/pull/fetch）</span>
+<span class="token function">git</span> branch                                                <span class="token comment" spellcheck="true"># 显示本地分支</span>
+<span class="token function">git</span> branch --contains 50089                               <span class="token comment" spellcheck="true"># 显示包含提交50089的分支</span>
+<span class="token function">git</span> branch -a                                             <span class="token comment" spellcheck="true"># 显示所有分支</span>
+<span class="token function">git</span> branch -r                                             <span class="token comment" spellcheck="true"># 显示所有原创分支</span>
+<span class="token function">git</span> branch --merged                                       <span class="token comment" spellcheck="true"># 显示所有已合并到当前分支的分支</span>
+<span class="token function">git</span> branch --no-merged                                    <span class="token comment" spellcheck="true"># 显示所有未合并到当前分支的分支</span>
+<span class="token function">git</span> branch -m master master_copy                          <span class="token comment" spellcheck="true"># 本地分支改名</span>
+<span class="token function">git</span> checkout -b master_copy                               <span class="token comment" spellcheck="true"># 从当前分支创建新分支master_copy并检出</span>
+<span class="token function">git</span> checkout -b master master_copy                        <span class="token comment" spellcheck="true"># 上面的完整版</span>
+<span class="token function">git</span> checkout features/performance                         <span class="token comment" spellcheck="true"># 检出已存在的features/performance分支</span>
+<span class="token function">git</span> checkout --track hotfixes/BJVEP933                    <span class="token comment" spellcheck="true"># 检出远程分支hotfixes/BJVEP933并创建本地跟踪分支</span>
+<span class="token function">git</span> checkout v2.0                                         <span class="token comment" spellcheck="true"># 检出版本v2.0</span>
+<span class="token function">git</span> checkout -b devel origin/develop                      <span class="token comment" spellcheck="true"># 从远程分支develop创建新本地分支devel并检出</span>
+<span class="token function">git</span> checkout -- README                                    <span class="token comment" spellcheck="true"># 检出head版本的README文件（可用于修改错误回退）</span>
+<span class="token function">git</span> merge origin/master                                   <span class="token comment" spellcheck="true"># 合并远程master分支至当前分支</span>
+<span class="token function">git</span> cherry-pick ff44785404a8e                             <span class="token comment" spellcheck="true"># 合并提交ff44785404a8e的修改</span>
+<span class="token function">git</span> push origin master                                    <span class="token comment" spellcheck="true"># 将当前分支push到远程master分支</span>
+<span class="token function">git</span> push origin :hotfixes/BJVEP933                        <span class="token comment" spellcheck="true"># 删除远程仓库的hotfixes/BJVEP933分支</span>
+<span class="token function">git</span> push --tags                                           <span class="token comment" spellcheck="true"># 把所有tag推送到远程仓库</span>
+<span class="token function">git</span> fetch                                                 <span class="token comment" spellcheck="true"># 获取所有远程分支（不更新本地分支，另需merge）</span>
+<span class="token function">git</span> fetch --prune                                         <span class="token comment" spellcheck="true"># 获取所有原创分支并清除服务器上已删掉的分支</span>
+<span class="token function">git</span> pull origin master                                    <span class="token comment" spellcheck="true"># 获取远程分支master并merge到当前分支</span>
+<span class="token function">git</span> <span class="token function">mv</span> README README2                                     <span class="token comment" spellcheck="true"># 重命名文件README为README2</span>
+<span class="token function">git</span> reset --hard HEAD                                     <span class="token comment" spellcheck="true"># 将当前版本重置为HEAD（通常用于merge失败回退）</span>
+<span class="token function">git</span> rebase
+<span class="token function">git</span> branch -d hotfixes/BJVEP933                           <span class="token comment" spellcheck="true"># 删除分支hotfixes/BJVEP933（本分支修改已合并到其他分支）</span>
+<span class="token function">git</span> branch -D hotfixes/BJVEP933                           <span class="token comment" spellcheck="true"># 强制删除分支hotfixes/BJVEP933</span>
+<span class="token function">git</span> ls-files                                              <span class="token comment" spellcheck="true"># 列出git index包含的文件</span>
+<span class="token function">git</span> show-branch                                           <span class="token comment" spellcheck="true"># 图示当前分支历史</span>
+<span class="token function">git</span> show-branch --all                                     <span class="token comment" spellcheck="true"># 图示所有分支历史</span>
+<span class="token function">git</span> whatchanged                                           <span class="token comment" spellcheck="true"># 显示提交历史对应的文件修改</span>
+<span class="token function">git</span> revert dfb02e6e4f2f7b573337763e5c0013802e392818       <span class="token comment" spellcheck="true"># 撤销提交dfb02e6e4f2f7b573337763e5c0013802e392818</span>
+<span class="token function">git</span> ls-tree HEAD                                          <span class="token comment" spellcheck="true"># 内部命令：显示某个git对象</span>
+<span class="token function">git</span> rev-parse v2.0                                        <span class="token comment" spellcheck="true"># 内部命令：显示某个ref对于的SHA1 HASH</span>
+<span class="token function">git</span> reflog                                                <span class="token comment" spellcheck="true"># 显示所有提交，包括孤立节点</span>
+<span class="token function">git</span> show HEAD@<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;5&amp;#125;</span>
+<span class="token function">git</span> show master@<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;yesterday&amp;#125;                               # 显示master分支昨天的状态</span>
+<span class="token function">git</span> log --pretty<span class="token operator">=</span>format:<span class="token string">'%h %s'</span> --graph                   <span class="token comment" spellcheck="true"># 图示提交日志</span>
+<span class="token function">git</span> show HEAD~3
+<span class="token function">git</span> show -s --pretty<span class="token operator">=</span>raw 2be7fcb476
+<span class="token function">git</span> stash                                                 <span class="token comment" spellcheck="true"># 暂存当前修改，将所有至为HEAD状态</span>
+<span class="token function">git</span> stash list                                            <span class="token comment" spellcheck="true"># 查看所有暂存</span>
+<span class="token function">git</span> stash show -p stash@<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;0&amp;#125;                               # 参考第一次暂存</span>
+<span class="token function">git</span> stash apply stash@<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;0&amp;#125;                                 # 应用第一次暂存</span>
+<span class="token function">git</span> <span class="token function">grep</span> <span class="token string">"delete from"</span>                                    <span class="token comment" spellcheck="true"># 文件中搜索文本“delete from”</span>
+<span class="token function">git</span> <span class="token function">grep</span> -e <span class="token string">'#define'</span> --and -e SORT_DIRENT
+<span class="token function">git</span> gc
+<span class="token function">git</span> <span class="token function">fsck</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://www.runoob.com/manual/git-guide/">git - 简明指南</a><br><a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/git-guide.html">Github 简明教程</a></p>
 
                 
             </div>
@@ -591,7 +531,7 @@ $ npm install hexo-theme-keep@latest
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://nudoo.github.io/blog/blog/2024/10/02/%E5%9F%BA%E4%BA%8EHexo%E4%B8%8EGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">https://nudoo.github.io/blog/blog/2024/10/02/%E5%9F%BA%E4%BA%8EHexo%E4%B8%8EGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</a>
+                    <a href="https://nudoo.github.io/blog/blog/2024/10/02/git-chang-yong-ming-ling/">https://nudoo.github.io/blog/blog/2024/10/02/git-chang-yong-ming-ling/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -629,12 +569,8 @@ $ npm install hexo-theme-keep@latest
                     
                         <div class="article-tag">
                             
-                                <a href="/blog/tags/github/">
-                                    <span class="chip bg-color">github</span>
-                                </a>
-                            
-                                <a href="/blog/tags/%E6%95%99%E7%A8%8B/">
-                                    <span class="chip bg-color">教程</span>
+                                <a href="/blog/tags/git/">
+                                    <span class="chip bg-color">git</span>
                                 </a>
                             
                         </div>
@@ -713,41 +649,47 @@ $ npm install hexo-theme-keep@latest
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/blog/2024/10/02/git%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86/">
+                <a href="/blog/2024/10/02/git-chang-yong-ming-ling/">
                     <div class="card-image">
                         
-                        <img src="https://tva1.sinaimg.cn/large/466f79e8ly1gzoeee63poj223w1irdzt.jpg" class="responsive-img" alt="git配置代理">
+                        <img src="https://i.loli.net/2018/07/30/5b5f2f319a4c8.jpg" class="responsive-img" alt="git常用命令">
                         
-                        <span class="card-title">git配置代理</span>
+                        <span class="card-title">git常用命令</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用socks5协议：git config –global http.proxy socks5://127.0.0.1:10808
+                            git init
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2024-10-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-02
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            moea
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    开发工具
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/blog/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/">
-                        <span class="chip bg-color">开发工具</span>
+                    <a href="/blog/tags/git/">
+                        <span class="chip bg-color">git</span>
                     </a>
                     
                 </div>
@@ -761,32 +703,51 @@ $ npm install hexo-theme-keep@latest
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/blog/2024/10/01/hello-world/">
+                <a href="/blog/2024/10/02/git-pei-zhi-dai-li/">
                     <div class="card-image">
                         
+                        <img src="https://gd-hbimg.huaban.com/1a6ad216a3e7e3ab52fe976492a92490bf60e507fe5f0-WmQZtv_fw658webp" class="responsive-img" alt="git配置代理">
                         
-                        <img src="/blog/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">git配置代理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            使用V2ray对Git/npm进行代理加速
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-10-02
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            moea
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/" class="post-category">
+                                    开发工具
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/blog/tags/github/">
+                        <span class="chip bg-color">github</span>
+                    </a>
+                    
+                    <a href="/blog/tags/git/">
+                        <span class="chip bg-color">git</span>
+                    </a>
+                    
+                    <a href="/blog/tags/npm/">
+                        <span class="chip bg-color">npm</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -857,6 +818,87 @@ $ npm install hexo-theme-keep@latest
 
 
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/blog/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
     
 
 </main>
@@ -893,12 +935,14 @@ $ npm install hexo-theme-keep@latest
                     <span id="busuanzi_value_site_pv" class="white-color"></span>
             </span>
             
-            
+            <!--
+			
                 <span id="busuanzi_container_site_uv">
                 &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
                     <span id="busuanzi_value_site_uv" class="white-color"></span>
             </span>
             
+			-->
             <br>
 
             <!-- 运行天数提醒. -->

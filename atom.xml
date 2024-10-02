@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>存在于梦境的真实之地</title>
+  
+  <subtitle>追逐永远的星光</subtitle>
+  <link href="https://nudoo.github.io/blog/atom.xml" rel="self"/>
+  
+  <link href="https://nudoo.github.io/blog/"/>
+  <updated>2024-10-02T08:12:42.293Z</updated>
+  <id>https://nudoo.github.io/blog/</id>
+  
+  <author>
+    <name>moea</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git常用命令</title>
+    <link href="https://nudoo.github.io/blog/2024/10/02/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://nudoo.github.io/blog/2024/10/02/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2024-10-02T06:54:44.000Z</published>
+    <updated>2024-10-02T08:12:42.293Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;git init                                                  # 初始化本地git仓库（创建新仓库）
+git config --global user.name</summary>
+        
+      
+    
+    
+    
+    
+    <category term="开发工具" scheme="https://nudoo.github.io/blog/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git配置代理</title>
+    <link href="https://nudoo.github.io/blog/2024/10/02/git%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86/"/>
+    <id>https://nudoo.github.io/blog/2024/10/02/git%E9%85%8D%E7%BD%AE%E4%BB%A3%E7%90%86/</id>
+    <published>2024-10-02T06:39:44.000Z</published>
+    <updated>2024-10-02T08:12:06.980Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;git&quot;&gt;&lt;a href=&quot;#git&quot; class=&quot;headerlink&quot; title=&quot;git&quot;&gt;&lt;/a&gt;git&lt;/h2&gt;&lt;pre&gt;&lt;code class=&quot;sh&quot;&gt;$ # socks5协议，v2ray默认监听10808端口
+$ git config</summary>
+        
+      
+    
+    
+    
+    
+    <category term="开发工具" scheme="https://nudoo.github.io/blog/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于Hexo与GitHub搭建个人博客</title>
+    <link href="https://nudoo.github.io/blog/2024/10/02/%E5%9F%BA%E4%BA%8EHexo%E4%B8%8EGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://nudoo.github.io/blog/2024/10/02/%E5%9F%BA%E4%BA%8EHexo%E4%B8%8EGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
+    <published>2024-10-02T02:36:41.000Z</published>
+    <updated>2024-10-02T09:58:01.430Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;0-前期准备&quot;&gt;&lt;a href=&quot;#0-前期准备&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Markdown" scheme="https://nudoo.github.io/blog/categories/Markdown/"/>
+    
+    
+    <category term="github" scheme="https://nudoo.github.io/blog/tags/github/"/>
+    
+    <category term="教程" scheme="https://nudoo.github.io/blog/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://nudoo.github.io/blog/2024/10/01/hello-world/"/>
+    <id>https://nudoo.github.io/blog/2024/10/01/hello-world/</id>
+    <published>2024-10-01T14:03:07.504Z</published>
+    <updated>2024-10-01T08:26:31.580Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

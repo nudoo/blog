@@ -334,7 +334,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://api.paugram.com/wallpaper/')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/nudoo/nudoo.github.io/gallery/imgs/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -399,7 +399,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    1.2k
                 </div>
                 
 
@@ -542,6 +542,11 @@ $ <span class="token function">npm</span> <span class="token function">install</
   <span class="token comment" spellcheck="true"># example, https://github.com/hexojs/hexojs.github.io</span>
   <span class="token key atrule">branch</span><span class="token punctuation">:</span> gh<span class="token punctuation">-</span>pages
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>远程部署：</p>
+<pre class="line-numbers language-bash"><code class="language-bash">$ hexo clean <span class="token operator">&amp;</span> hexo g <span class="token operator">&amp;</span> hexo d
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>hexo deploy只会将生成的静态网页文件(public目录)上传到了仓库中。可以在github仓库新建一个分支hexo（或新建一个仓库）来储存源文件，然后git clone到本地，把.git文件夹拿出来，放在博客根目录下。然后git checkout hexo切换到hexo分支，然后git add .，然后git commit -m “xxx”，最后git push origin hexo提交就行了。</p>
+<p>也可以使用 GitHub Pages 部署，参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/github-pages">文档</a> ，注意这里上传的是源文件，静态网页文件不需要上传。</p>
 <p>为了将博客放在子目录(即nudoo.github.io&#x2F;blog)下，需要新建一个github仓库(blog)，注意需要是公开的，<br>在 GitHub 仓库的设置中，导航至 Settings &gt; Pages &gt; Source 。 将 source 更改为 GitHub Actions，然后保存。<br>编辑 _config.yml，将 url: 更改为 nudoo.github.io&#x2F;blog<br>Commit 并 push 到默认分支上。（hexo clean &amp; hexo g &amp; hexo d)<br>访问nudoo.github.io&#x2F;blog查看</p>
 <h3 id="1-7-发布"><a href="#1-7-发布" class="headerlink" title="1.7 发布"></a>1.7 发布</h3><p>清除之前生成的东西</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo clean
@@ -586,6 +591,7 @@ $ <span class="token function">npm</span> <span class="token function">install</
   <span class="token key atrule">react</span><span class="token punctuation">:</span>
     <span class="token key atrule">opacity</span><span class="token punctuation">:</span> <span class="token number">0.7</span>
 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">hexo官方文档</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/35668237">超详细Hexo+Github博客搭建小白教程</a><br><a target="_blank" rel="noopener" href="https://blinkfox.github.io/2018/09/28/qian-duan/hexo-bo-ke-zhu-ti-zhi-hexo-theme-matery-de-jie-shao/">Hexo博客主题之hexo-theme-matery的介绍</a><br>[Matery之代码块优化] (<a target="_blank" rel="noopener" href="http://www.luckysec.cn/posts/1b9a9e28.html">http://www.luckysec.cn/posts/1b9a9e28.html</a>)</p>
 
                 
             </div>
@@ -797,7 +803,7 @@ $ <span class="token function">npm</span> <span class="token function">install</
                 <a href="/blog/2024/10/02/ji-yu-hexo-yu-github-da-jian-ge-ren-bo-ke/">
                     <div class="card-image">
                         
-                        <img src="https://api.paugram.com/wallpaper/" class="responsive-img" alt="基于Hexo与GitHub搭建个人博客">
+                        <img src="https://cdn.jsdelivr.net/gh/nudoo/nudoo.github.io/gallery/imgs/1.jpg" class="responsive-img" alt="基于Hexo与GitHub搭建个人博客">
                         
                         <span class="card-title">基于Hexo与GitHub搭建个人博客</span>
                     </div>
@@ -930,7 +936,7 @@ $ <span class="token function">npm</span> <span class="token function">install</
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">2.4k</span>
+                        class="white-color">2.6k</span>
             
             
             

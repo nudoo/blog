@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>scoop使用</title>
+      <link href="/blog/2026/03/05/scoop-shi-yong/"/>
+      <url>/blog/2026/03/05/scoop-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装scoop"><a href="#安装scoop" class="headerlink" title="安装scoop"></a>安装scoop</h1><p>打开Windows自带的powershell，输入如下命令自定义安装位置(D:\Scoop更改为你需要安装的目录)</p><pre class="line-numbers language-bash"><code class="language-bash"><span class="token variable">$env</span>:SCOOP<span class="token operator">=</span><span class="token string">'D:\Scoop'</span><span class="token punctuation">[</span>Environment<span class="token punctuation">]</span>::SetEnvironmentVariable<span class="token punctuation">(</span><span class="token string">'SCOOP'</span>, <span class="token variable">$env</span>:SCOOP, <span class="token string">'User'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>设置允许 PowerShell 执行本地脚本</p><pre class="line-numbers language-bash"><code class="language-bash">Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装 Scoop(需要开代理工具)</p><pre class="line-numbers language-bash"><code class="language-bash">iwr -useb get.scoop.sh <span class="token operator">|</span> iex<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>设置代理</p><pre><code>scoop config proxy 127.0.0.1:7890</code></pre><h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><p>scoop + 命令 + 参数</p><p>search——搜索仓库中是否有相应软件<br>install——安装相应软件，注意：在安装完软件后，有的软件（如vscode、python等）可能会弹出一些提示，让你执行命令后可以关联文件类型、允许其他程序调用等，根据自身需求执行命令即可，但一般都推荐执行提示中的命令<br>uninstall——卸载相应软件<br>update——更新软件，可通过scoop update -a更新所有已安装软件<br>hold——锁定软件阻止其更新 更多命令使用帮助可使用scoop -h来查看</p><p>scoop list —— 查看使用scoop安装的软件</p><h1 id="迁移："><a href="#迁移：" class="headerlink" title="迁移："></a>迁移：</h1><pre><code># 先在旧电脑导出scoop export &gt; D:\Download\installed_apps.txt# 复制文件到新电脑scoop import &lt; D:\Download\installed_apps.txt</code></pre><p>添加常用仓库</p><pre><code>scoop bucket add extras</code></pre><p>软件推荐</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> scoop </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/blog/2026/03/05/hello-world/"/>
+      <url>/blog/2026/03/05/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows 全新装机指南（Scoop 版）</title>
       <link href="/blog/2026/03/05/zhuang-ji/"/>
       <url>/blog/2026/03/05/zhuang-ji/</url>
@@ -54,19 +92,6 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/blog/2026/03/04/hello-world/"/>
-      <url>/blog/2026/03/04/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>git常用命令</title>
       <link href="/blog/2024/10/02/git-chang-yong-ming-ling/"/>
       <url>/blog/2024/10/02/git-chang-yong-ming-ling/</url>
@@ -108,9 +133,9 @@
       
         <tags>
             
-            <tag> git </tag>
-            
             <tag> github </tag>
+            
+            <tag> git </tag>
             
             <tag> npm </tag>
             

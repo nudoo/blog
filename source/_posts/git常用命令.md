@@ -2,8 +2,8 @@
 title: git常用命令
 date: 2024-10-02 14:54:44
 author: moea
-summary: git init # 初始化本地git仓库（创建新仓库）
-img: https://i.loli.net/2018/07/30/5b5f2f319a4c8.jpg
+summary: git常用命令 # 初始化本地git仓库（创建新仓库）
+img: https://cdn.jsdelivr.net/gh/nudoo/nudoo.github.io@master/gallery/imgs/11.jpg
 categories: 开发工具
 tags:
   - git

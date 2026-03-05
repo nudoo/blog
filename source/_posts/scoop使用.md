@@ -2,8 +2,8 @@
 title: scoop使用
 date: 2026-03-05 11:50:40
 author: moea
-summary: scoop install # scoop安装应用
-img: https://i.loli.net/2018/07/30/5b5f2f319a4c8.jpg
+summary: scoop使用 # scoop安装应用
+img: https://cdn.jsdelivr.net/gh/nudoo/nudoo.github.io@master/gallery/imgs/5.jpg
 categories: 开发工具
 tags:
   - scoop
@@ -25,7 +25,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 iwr -useb get.scoop.sh | iex
 ```
 设置代理
-```
+```bash
 scoop config proxy 127.0.0.1:7890
 ```
 
@@ -42,7 +42,7 @@ scoop list —— 查看使用scoop安装的软件
 
 # 迁移：
 
-```
+```bash
 # 先在旧电脑导出
 scoop export > D:\Download\installed_apps.txt
 # 复制文件到新电脑
@@ -50,7 +50,7 @@ scoop import < D:\Download\installed_apps.txt
 ```
 
 添加常用仓库
-```
+```bash
 scoop bucket add extras
 ```
 软件推荐

@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="scoop使用, 存在于梦境的真实之地">
-    <meta name="description" content="scoop install">
+    <meta name="description" content="scoop使用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -336,7 +336,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://i.loli.net/2018/07/30/5b5f2f319a4c8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/nudoo/nudoo.github.io@master/gallery/imgs/5.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -422,19 +422,19 @@
 <pre class="line-numbers language-bash"><code class="language-bash">iwr -useb get.scoop.sh <span class="token operator">|</span> iex
 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>设置代理</p>
-<pre><code>scoop config proxy 127.0.0.1:7890
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">scoop config proxy 127.0.0.1:7890
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><p>scoop + 命令 + 参数</p>
 <p>search——搜索仓库中是否有相应软件<br>install——安装相应软件，注意：在安装完软件后，有的软件（如vscode、python等）可能会弹出一些提示，让你执行命令后可以关联文件类型、允许其他程序调用等，根据自身需求执行命令即可，但一般都推荐执行提示中的命令<br>uninstall——卸载相应软件<br>update——更新软件，可通过scoop update -a更新所有已安装软件<br>hold——锁定软件阻止其更新 更多命令使用帮助可使用scoop -h来查看</p>
 <p>scoop list —— 查看使用scoop安装的软件</p>
-<h1 id="迁移："><a href="#迁移：" class="headerlink" title="迁移："></a>迁移：</h1><pre><code># 先在旧电脑导出
-scoop export &gt; D:\Download\installed_apps.txt
-# 复制文件到新电脑
-scoop import &lt; D:\Download\installed_apps.txt
-</code></pre>
+<h1 id="迁移："><a href="#迁移：" class="headerlink" title="迁移："></a>迁移：</h1><pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 先在旧电脑导出</span>
+scoop <span class="token function">export</span> <span class="token operator">></span> D:\Download\installed_apps.txt
+<span class="token comment" spellcheck="true"># 复制文件到新电脑</span>
+scoop <span class="token function">import</span> <span class="token operator">&lt;</span> D:\Download\installed_apps.txt
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p>添加常用仓库</p>
-<pre><code>scoop bucket add extras
-</code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash">scoop bucket add extras
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>软件推荐</p>
 
                 
@@ -588,7 +588,7 @@ scoop import &lt; D:\Download\installed_apps.txt
                 <a href="/blog/2026/03/05/scoop-shi-yong/">
                     <div class="card-image">
                         
-                        <img src="https://i.loli.net/2018/07/30/5b5f2f319a4c8.jpg" class="responsive-img" alt="scoop使用">
+                        <img src="https://cdn.jsdelivr.net/gh/nudoo/nudoo.github.io@master/gallery/imgs/5.jpg" class="responsive-img" alt="scoop使用">
                         
                         <span class="card-title">scoop使用</span>
                     </div>
@@ -596,7 +596,7 @@ scoop import &lt; D:\Download\installed_apps.txt
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            scoop install
+                            scoop使用
                         
                     </div>
                     <div class="publish-info">

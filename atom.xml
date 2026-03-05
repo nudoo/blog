@@ -159,9 +159,9 @@
     <category term="开发工具" scheme="https://nudoo.github.io/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     
     
-    <category term="git" scheme="https://nudoo.github.io/blog/tags/git/"/>
-    
     <category term="github" scheme="https://nudoo.github.io/blog/tags/github/"/>
+    
+    <category term="git" scheme="https://nudoo.github.io/blog/tags/git/"/>
     
     <category term="npm" scheme="https://nudoo.github.io/blog/tags/npm/"/>
     

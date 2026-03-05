@@ -113,7 +113,7 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/nudoo/blog.git
+  repo: git@github.com:nudoo/blog.git
   # repo: https://github.com/nudoo/nudoo.github.io.git
   # example, https://github.com/hexojs/hexojs.github.io
   branch: main

@@ -3,7 +3,7 @@ title: git配置代理
 date: 2024-10-02 14:39:44
 author: moea
 summary: 使用V2ray对Git/npm进行代理加速
-img: https://gd-hbimg.huaban.com/1a6ad216a3e7e3ab52fe976492a92490bf60e507fe5f0-WmQZtv_fw658webp
+img: https://cdn.jsdelivr.net/gh/nudoo/nudoo.github.io@master/gallery/r18/imgs/5.jpg
 categories: 开发工具
 tags:
   - github

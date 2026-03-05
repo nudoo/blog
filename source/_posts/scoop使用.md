@@ -51,6 +51,6 @@ scoop import < D:\Download\installed_apps.txt
 
 添加常用仓库
 ```bash
-scoop bucket add extras
+scoop bucket add extras versions
 ```
 软件推荐

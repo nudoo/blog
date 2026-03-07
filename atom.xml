@@ -6,7 +6,7 @@
   <link href="https://nudoo.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://nudoo.github.io/blog/"/>
-  <updated>2026-03-05T06:43:24.302Z</updated>
+  <updated>2026-03-07T19:50:55.794Z</updated>
   <id>https://nudoo.github.io/blog/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>在wsl中使用docker</title>
+    <link href="https://nudoo.github.io/blog/2026/03/07/zai-wsl-zhong-shi-yong-docker/"/>
+    <id>https://nudoo.github.io/blog/2026/03/07/zai-wsl-zhong-shi-yong-docker/</id>
+    <published>2026-03-07T13:30:45.000Z</published>
+    <updated>2026-03-07T19:50:55.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;在wsl中安装配置docker&quot;&gt;&lt;a href=&quot;#在wsl中安装配置docker&quot; class=&quot;headerlink&quot; title=&quot;在wsl中安装配置docker&quot;&gt;&lt;/a&gt;在wsl中安装配置docker&lt;/h1&gt;&lt;p&gt;一键脚本：&lt;/p&gt;
+&lt;pre</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>scoop使用</title>
     <link href="https://nudoo.github.io/blog/2026/03/05/scoop-shi-yong/"/>
     <id>https://nudoo.github.io/blog/2026/03/05/scoop-shi-yong/</id>
     <published>2026-03-05T03:50:40.000Z</published>
-    <updated>2026-03-05T06:43:24.302Z</updated>
+    <updated>2026-03-05T06:53:54.840Z</updated>
     
     
       
@@ -143,7 +165,7 @@
     <link href="https://nudoo.github.io/blog/2024/10/02/git-pei-zhi-dai-li/"/>
     <id>https://nudoo.github.io/blog/2024/10/02/git-pei-zhi-dai-li/</id>
     <published>2024-10-02T06:39:44.000Z</published>
-    <updated>2026-03-05T03:37:55.540Z</updated>
+    <updated>2026-03-05T11:42:04.283Z</updated>
     
     
       

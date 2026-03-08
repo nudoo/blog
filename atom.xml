@@ -6,7 +6,7 @@
   <link href="https://nudoo.github.io/blog/atom.xml" rel="self"/>
   
   <link href="https://nudoo.github.io/blog/"/>
-  <updated>2026-03-07T19:50:55.794Z</updated>
+  <updated>2026-03-08T08:24:13.265Z</updated>
   <id>https://nudoo.github.io/blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://nudoo.github.io/blog/2026/03/07/zai-wsl-zhong-shi-yong-docker/"/>
     <id>https://nudoo.github.io/blog/2026/03/07/zai-wsl-zhong-shi-yong-docker/</id>
     <published>2026-03-07T13:30:45.000Z</published>
-    <updated>2026-03-07T19:50:55.794Z</updated>
+    <updated>2026-03-08T08:24:13.265Z</updated>
     
     
       
@@ -35,6 +35,10 @@
     
     
     
+    <category term="开发工具" scheme="https://nudoo.github.io/blog/categories/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+    
+    <category term="docker" scheme="https://nudoo.github.io/blog/tags/docker/"/>
     
   </entry>
   
